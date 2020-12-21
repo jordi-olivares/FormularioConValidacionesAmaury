@@ -6,4 +6,5 @@
     <string name="mErrorNombre">Campo necesario</string>
     <string name="mErrorCuenta">Se necesita un número de cuenta de 10 digítos</string>
     <string name="claveAlumno">alumno</string>
+    <string name="slogan">By Jordi</string>
 </resources>
