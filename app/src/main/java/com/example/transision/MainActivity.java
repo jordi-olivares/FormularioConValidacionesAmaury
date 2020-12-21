@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             //i.putExtra("b",b);
             alumno=new Alumno(etNombre.getText().toString(),etCuenta.getText().toString());
             Bundle bundle=new Bundle();
-            bundle.putSerializable("alumno",alumno);
+            bundle.putSerializable(getResources().getString(R.string.claveAlumno),alumno);
             i.putExtras(bundle);
             startActivity(i);
             finish();
@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean validacion(){
         if (etNombre.getText().toString().equals("")){
-            etNombre.setError("Campo necesario");
+            etNombre.setError(getResources().getString(R.string.mErrorNombre));
             return false;
         }
         if (etCuenta.getText().toString().equals("")||etCuenta.getText().toString().length()<10){
-            etCuenta.setError("numero de cuenta de 10 digitos");
+            etCuenta.setError(getResources().getString(R.string.mErrorCuenta));
             return false;
         }
         return true;

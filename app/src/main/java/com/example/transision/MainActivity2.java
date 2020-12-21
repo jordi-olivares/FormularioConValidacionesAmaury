@@ -21,7 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
         tvCuenta=(TextView)findViewById(R.id.tvCuenta);
 
         Bundle g=getIntent().getExtras();
-        alumno=(Alumno)g.getSerializable("alumno");
+        alumno=(Alumno)g.getSerializable(getResources().getString(R.string.claveAlumno));
         a=alumno.getNombre();
         b=alumno.getNumCuenta();
         //Toast.makeText(this,"a: "+a, Toast.LENGTH_LONG).show();
